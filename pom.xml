@@ -57,7 +57,7 @@
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity4</artifactId>
-            <version>3.0.4</version> <!-- Corrected version to 3.0.4 -->
+            <version>2.5.0</version> <!-- Corrected version to 2.5.0 -->
         </dependency>
 
         <!-- Spring MVC -->
@@ -131,33 +131,4 @@
                 <executions>
                     <execution>
                         <id>jacoco-initialize</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>jacoco-site</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>http://10.231.3.52:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>maven-snapshots</name>
-            <url>http://10.231.3.52:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-</project>
+                        
